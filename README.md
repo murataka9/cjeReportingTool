@@ -42,6 +42,7 @@ cjeReportingTool(path, outpath, split_str, prefix)
 ├── out.md
 └── main.py
 ```
+---
 - Read file `./sample.py`
 ```
 1   # num
@@ -54,7 +55,7 @@ cjeReportingTool(path, outpath, split_str, prefix)
 ```
 1   cjeReportingTool('sample.py', 'out.md', '##', '>')
 ```
-
+---
 - Output file  `./out.md`
 ```
 1   > 2: number
@@ -67,3 +68,7 @@ cjeReportingTool(path, outpath, split_str, prefix)
 `split_str` uses a string other than the spelling of the symbols used your python code.
 - Good: `##`, `#&`, `#$`, `#%`　　
 - Bad: `#` No difference from other comments　`$` That's not comment
+
+# License
+This software is released under the MIT License, see LICENSE.  
+show all https://github.com/murataka9/cjeReportingTool/blob/main/LICENSE
