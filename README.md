@@ -1,5 +1,5 @@
 # cjeReportingTool
-![example](https://github.com/murataka9/cjeReportingTool/blob/main/img/image.png "サンプル")
+![example](./img/image.png "サンプル")
 
 
 This Tool made for CJE(Chishiki Joho Enshu 3) class at Univ. Tsukuba, klis.  
@@ -35,7 +35,14 @@ cjeReportingTool(path, outpath, split_str, prefix)
 - `prefix` Prefixes to be written out
 
 ### Example
-- Read file `Usr/home/sample.py`
+- File
+```
+.
+├── sample.py
+├── out.md
+└── main.py
+```
+- Read file `./sample.py`
 ```
 1   # num
 2   i = 1 ##number
@@ -43,20 +50,20 @@ cjeReportingTool(path, outpath, split_str, prefix)
 4   # output
 5   print(n) ##2
 ```
-- Main program
+- Main program `./main.py`
 ```
-1   cjeReportingTool('Usr/home/sample.py', 'Usr/home/out.md', '##', '>')
+1   cjeReportingTool('sample.py', 'out.md', '##', '>')
 ```
 
-- Output file  `Usr/home/out.md`
+- Output file  `./out.md`
 ```
 1   > 2: number
 2   
 3   > 5: 2
 ```
-![example](https://github.com/murataka9/cjeReportingTool/blob/main/img/preview_ex.png "サンプル")
+![example](./img/preview_ex.png "サンプル")
 
-### Point
+### Note
 `split_str` uses a string other than the spelling of the symbols used your python code.
 - Good: `##`, `#&`, `#$`, `#%`　　
 - Bad: `#` No difference from other comments　`$` That's not comment
