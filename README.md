@@ -1,5 +1,5 @@
 # cjeReportingTool
-![example](./img/image.png "サンプル")
+![example](https://github.com/murataka9/cjeReportingTool/blob/main/img/image.png "サンプル")
 
 
 This Tool made for CJE(Chishiki Joho Enshu 3) class at Univ. Tsukuba, klis.  
@@ -54,7 +54,7 @@ cjeReportingTool(path, outpath, split_str, prefix)
 2   
 3   > 5: 2
 ```
-![example](./img/preview_ex.png "サンプル")
+![example](https://github.com/murataka9/cjeReportingTool/blob/main/img/preview_ex.png "サンプル")
 
 ### Point
 `split_str` uses a string other than the spelling of the symbols used your python code.
