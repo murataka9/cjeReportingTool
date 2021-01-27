@@ -9,16 +9,17 @@ This package converts source code comment to markdown text using split words.
 > 筑波大学 KLISのCJE3のマークダウン形式の小レポート用ライブラリです。
 > 特定の文字列`##`や`#$`等をコメントに用いると，その記号を用いたコード行末に書いたコメントのみを行番号と合わせて出力します。
 
-### Requirement
+## Requirement
 
 This package does not require on other any packages.
 
-### Installation
+## Installation
 
 This package runs on Python 3.6 or higher version. You can install it from PyPI via pip:
 
 > ja:
-> pipからインストールすることができます。インストールするには以下のコマンドを使用します。
+> このパッケージはPython 3.6以上で動作します。
+> またpipコマンドで以下のようにインストールできます。
 
 ```bash
 pip install cjeReportingTool
