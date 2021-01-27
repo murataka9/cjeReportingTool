@@ -7,6 +7,7 @@
 # This source code or any portion licensed by MIT
 # ===========================================#
 
+
 def cjeReportingTool(path, outpath, split_str, prefix):
 
     # 文字列へ強制変換
@@ -16,7 +17,7 @@ def cjeReportingTool(path, outpath, split_str, prefix):
     prefix = str(prefix)
 
     # シークエンスバー
-    seq, sequence_per, sequence_con = 0, 0, 0
+    sequence_per, sequence_con = 0, 0
     seq = sum(1 for line in open(path))
 
     # 指定ファイルを開く
@@ -26,7 +27,7 @@ def cjeReportingTool(path, outpath, split_str, prefix):
     line_cout = 1  # lineのカウントの初期化
     linenum_explanation = {}  # 行番号:説明文対辞書
 
-    # 1行づつ処理して指定語があったらsplitしてsplit_line[1]を辞書に登録
+    # 1行ずつ処理して指定語があったらsplitしてsplit_line[1]を辞書に登録
     for line in f:
         line = line.rstrip()
         sequence_con += 1

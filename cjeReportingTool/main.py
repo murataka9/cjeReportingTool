@@ -1,7 +1,7 @@
 import argparse
 import textwrap
 
-import cjeReportingTool
+import cjeReportingTool.cjeReportingTool as c
 
 
 def parseArgs():
@@ -25,8 +25,8 @@ def parseArgs():
 
 def main():
     args = parseArgs()
-    cjeReportingTool.cjeReportingTool(
-       args.path, args.outpath, args.split_str, args.prefix)
+    c.cjeReportingTool(
+       args.path[0], args.outpath[0], args.split_str, args.prefix)
 
 
 if __name__ == "__main__":
