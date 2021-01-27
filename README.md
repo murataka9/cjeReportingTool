@@ -31,9 +31,9 @@ to install.
 To use this tool as a package, load as a function.
 
 ```python
-import cjeReportingTool
+import cjeReportingTool.cjeReportingTool as c
 
-cjeReportingTool.cjeReportingTool(path, outpath, split_str, prefix)
+c.cjeReportingTool(path, outpath, split_str, prefix)
 ```
 
 Each args:
@@ -90,7 +90,7 @@ print(n) ##2
 - Main program `main.py`
 
 ```text
-import cjeReportingTool as c
+import cjeReportingTool.cjeReportingTool as c
 
 c.cjeReportingTool('sample.py', 'out.md', '##', '>')
 ```
