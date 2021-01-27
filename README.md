@@ -9,9 +9,7 @@ This package converts source code comment to markdown text using split words.
 > 筑波大学 KLISのCJE3のマークダウン形式の小レポート用ライブラリです。
 > 特定の文字列`##`や`#$`等をコメントに用いると，その記号を用いたコード行末に書いたコメントのみを行番号と合わせて出力します。
 
-## Usage
-
-### Require
+### Requirement
 
 This package does not require on other any packages.
 
@@ -28,22 +26,45 @@ pip install cjeReportingTool
 
 to install.
 
-## Documentation
+## Usage
 
-To use the package, load as a function.
+To use this tool as a package, load as a function.
 
 ```python
-cjeReportingTool(path, outpath, split_str, prefix)
+import cjeReportingTool
+
+cjeReportingTool.cjeReportingTool(path, outpath, split_str, prefix)
 ```
 
-### Args
+Each args:
 
 - `path` Read file path
 - `outpath` Export file path
 - `split_str` A symbol or string that separates comments from source code
 - `prefix` Prefixes to be written out
 
-### Example
+To use this command as a command,
+
+```bash
+$ cjerep -h
+usage: cjeReportingTool [-h] path outpath split_str prefix
+
+This Tool made for CJE(Chishiki Joho Enshu 3) class at Univ. Tsukuba, klis.
+This package converts source code comment to markdown text using split words.
+
+positional arguments:
+  path        Read file path
+  outpath     Export file path
+  split_str   A symbol or string that separates comments from source code
+  prefix      A Prefix to be written out
+
+optional arguments:
+  -h, --help  show this help message and exit
+
+$ cjerep sample.py out.md
+```
+
+## Example
 
 - File
 
@@ -56,25 +77,27 @@ cjeReportingTool(path, outpath, split_str, prefix)
 
 ---
 
-- Read file `./sample.py`
+- Read file `sample.py`
 
-```text
-1   # num
-2   i = 1 ##number
-3   n = i * 2
-4   # output
-5   print(n) ##2
+```python
+# num
+i = 1 ##number
+n = i * 2
+# output
+print(n) ##2
 ```
 
-- Main program `./main.py`
+- Main program `main.py`
 
 ```text
-1   cjeReportingTool('sample.py', 'out.md', '##', '>')
+import cjeReportingTool as c
+
+c.cjeReportingTool('sample.py', 'out.md', '##', '>')
 ```
 
 ---
 
-- Output file  `./out.md`
+- Output file  `out.md`
 
 ```text
 1   > 2: number
