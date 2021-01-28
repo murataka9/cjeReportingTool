@@ -16,7 +16,8 @@ def parseArgs():
                         help='Read file path')
     parser.add_argument('outpath',  metavar='outpath', nargs=1,
                         help='Export file path')
-    parser.add_argument('split_str',  metavar='split_str', nargs='?', default='##',
+    parser.add_argument('split_str', metavar='split_str',
+                        nargs='?', default='##',
                         help='A symbol or string that separates comments from source code')
     parser.add_argument('prefix',  metavar='prefix', nargs='?', default='>',
                         help='A Prefix to be written out')
@@ -26,7 +27,7 @@ def parseArgs():
 def main():
     args = parseArgs()
     c.cjeReportingTool(
-       args.path[0], args.outpath[0], args.split_str, args.prefix)
+        args.path[0], args.outpath[0], args.split_str, args.prefix)
 
 
 if __name__ == "__main__":

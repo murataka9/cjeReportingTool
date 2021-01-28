@@ -35,6 +35,7 @@ def cjeReportingTool(
             linenum_explanation[line_cout_str] = str(split_line[1])
 
         print('■{}%'.format(str(round(sequence_per, 2))), end='\r')
+
     print('')
 
     for line_num in linenum_explanation:
