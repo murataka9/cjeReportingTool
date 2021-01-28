@@ -113,7 +113,7 @@ c.cjeReportingTool('sample.py', 'out.md', '##', '>')
 `split_str` uses a string other than the spelling of the symbols used your python code.
 
 - Good: `##`, `#&`, `#$`, `#%`
-- Bad: `#` No difference from other comments　`$` That's not comment
+- Bad: `#` (No difference from other comments), `$` (That's not comment)
 
 ## License
 

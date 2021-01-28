@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# tmpfiles
+*.swp
+*.save
+
+# vscode
+*.vscode
