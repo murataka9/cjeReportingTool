@@ -12,7 +12,7 @@ setup(
     name='cjeReportingTool',
     packages=['cjeReportingTool'],
 
-    version='1.0.3',
+    version='1.0.10',
 
     license='MIT',
 

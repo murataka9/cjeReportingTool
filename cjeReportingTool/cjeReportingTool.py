@@ -16,7 +16,7 @@ def cjeReportingTool(path, outpath, split_str, prefix):
   prefix = str(prefix)
 
   #シークエンスバー
-  seq, sequence_per, sequence_con= 0,0, 0
+  seq, sequence_per, sequence_con= 0,0,0
   seq = sum(1 for line in open(path))
 
   #指定ファイルを開く
