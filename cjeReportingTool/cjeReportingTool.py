@@ -5,7 +5,7 @@
 # Creation Date   : 26-Jun-2021
 # Copyright © 2021 kami; Takahito Murakami. All rights reserved.
 # This source code or any portion licensed by MIT
-<<<<<<< HEAD
+# <<<<<<< HEAD
 #===========================================#
 
 def cjeReportingTool(path, outpath, split_str, prefix):
@@ -46,7 +46,7 @@ def cjeReportingTool(path, outpath, split_str, prefix):
     f2.write(prefix +'\t'+ line_num + ':' + '\t' + linenum_explanation[line_num]+ '\t'+'\t'+'\n'+'\n')
   f.close()
   f2.close()
-=======
+# =======
 # ===========================================#
 
 
@@ -86,4 +86,4 @@ def cjeReportingTool(
 
     f.close()
     f2.close()
->>>>>>> 70f0b3db5ea0056739a44000e853fd4791f6c969
+#>>>>>>> 70f0b3db5ea0056739a44000e853fd4791f6c969
