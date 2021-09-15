@@ -1,4 +1,7 @@
-## Closed (Please develop fork project)
+# Closed (Please develop fork project)
+
+---
+
 # cjeReportingTool
 
 ![example](./img/image.png "サンプル")
@@ -7,7 +10,7 @@ This tool made for CJE(Chishiki Joho Enshu 3) class at Univ. Tsukuba, klis.
 This package converts source code comment to markdown text using split words.
 
 > ja:
-> 筑波大学 KLISのCJE3のマークダウン形式の小レポート用ライブラリです。
+> 筑波大学 KLIS の CJE3 のマークダウン形式の小レポート用ライブラリです。
 > 特定の文字列`##`や`#$`等をコメントに用いると，その記号を用いたコード行末に書いたコメントのみを行番号と合わせて出力します。
 
 ## Requirement
@@ -19,8 +22,8 @@ This package does not require on other any packages.
 This package runs on Python 3.6 or higher version. You can install it from PyPI via pip:
 
 > ja:
-> このパッケージはPython 3.6以上で動作します。
-> またpipコマンドで以下のようにインストールできます。
+> このパッケージは Python 3.6 以上で動作します。
+> また pip コマンドで以下のようにインストールできます。
 
 ```bash
 pip install cjeReportingTool
@@ -99,11 +102,11 @@ c.cjeReportingTool('sample.py', 'out.md', '##', '>')
 
 ---
 
-- Output file  `out.md`
+- Output file `out.md`
 
 ```text
 1   > 2: number
-2   
+2
 3   > 5: 2
 ```
 

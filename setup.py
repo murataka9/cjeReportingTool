@@ -1,7 +1,9 @@
-## referenced = https://qiita.com/shonansurvivors/items/0fbcbfde129f2d26301c
-from setuptools import setup
+"""referenced = https://qiita.com/shonansurvivors/items/0fbcbfde129f2d26301c
+"""
 from codecs import open
 from os import path
+
+from setuptools import setup
 
 here = path.abspath(path.dirname(__file__))
 
@@ -23,7 +25,8 @@ setup(
 
     url='https://github.com/murataka9/cjeReportingTool',
 
-    description='This Tool made for CJE(Chishiki Joho Enshu 3) class at Univ. of Tsukuba, KLIS. This package converts source code comment to markdown text using split words.',
+    description=('This Tool made for CJE(Chishiki Joho Enshu 3) class at Univ. of Tsukuba, KLIS. '
+                 'This package converts source code comment to markdown text using split words.'),
     long_description=long_description,
     long_description_content_type='text/markdown',
     keywords='cjeReportingTool comment converter CJE University of Tsukuba KLIS',
